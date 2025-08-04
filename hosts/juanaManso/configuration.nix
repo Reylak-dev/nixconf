@@ -14,7 +14,7 @@
 
   boot.loader.efi = {
 
-    canTouchEfiVariables = true;
+    canTouchEfiVariables = false;
     efiSysMountPoint = "/boot";
 
   };
@@ -23,7 +23,8 @@
 
     device = "nodev";
     efiSupport = true;
-    useOSProber = true;
+    useOSProber = false;
+    efiInstallAsRemovable = true;
     configurationLimit = 10;
 
   };
@@ -111,7 +112,9 @@
   services.xserver.displayManager.startx.enable = true;
 
   # Enable nvidia drivers
-  nvidiaDrivers.enable = true;
+  nvidiaDrivers.enable = false;
+
+  system.stateVersion = "25.11";
 
 }
 

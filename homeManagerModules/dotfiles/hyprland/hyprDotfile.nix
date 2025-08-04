@@ -144,8 +144,9 @@
 	input = {
 
 	  # Keyboard layout
-	  kb_layout = "latam";
-	  kb_variant = "dvorak";
+	  kb_layout = "latam, us";
+	  kb_variant = "dvorak,";
+	  kb_options = grp:win_space_toggle;
 
 	}; 
 
