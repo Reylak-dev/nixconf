@@ -15,6 +15,9 @@
     # Enable the auto-mount for the external drives
     services.gvfs.enable = true;
 
+    # Keyring
+    services.gnome.gnome-keyring.enable = true;
+
     # Enable hyprland with xwayland
     programs.hyprland = {
 
