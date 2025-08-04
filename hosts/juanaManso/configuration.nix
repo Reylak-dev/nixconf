@@ -42,7 +42,7 @@
    i18n.defaultLocale = "es_AR.UTF-8";
    console = {
      font = "Lat2-Terminus16";
-     keyMap = "dvorak-la";
+     keyMap = "dvorak";
      useXkbConfig = false; # use xkb.options in tty.
    };
 
@@ -51,7 +51,7 @@
   services.xserver.excludePackages = [ pkgs.xterm ];
 
   # Configure keymap in X11
-  services.xserver.xkb.layout = "latam";
+  services.xserver.xkb.layout = "us";
   services.xserver.xkb.variant = "dvorak";
 
   # Enable CUPS to print documents.
