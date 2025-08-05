@@ -22,6 +22,7 @@
     };
 
     home.packages = with pkgs; [
+      libreoffice
       discord
       discordo
       telegram-desktop

@@ -38,8 +38,14 @@
       background-color: rgba(0, 0, 0, 0.0);
     }
 
-    .modules-center #workspaces button.active {
+    .modules-center #workspaces button.focused {
       background-color: @base03;
+    }
+
+    .modules-center #workspaces button.active {
+      background-color: @base0D;
+      color: @base00;
+      border-bottom: 0px solid transparent;
     }
 
     .modules-center #workspaces button.urgent {

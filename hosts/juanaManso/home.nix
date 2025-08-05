@@ -7,7 +7,8 @@
   home.homeDirectory = "/home/reylak";
 
   home.packages = with pkgs; [
-
+    vscodium
+    godot
   ];
 
   desktopApps.enable = true;
